@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<iteminfo>
+     <item>
+          <Name> pen</Name>
+          <Price> 100</Price>
+          <Quantity>10</Quantity>
+     </item>
+     <item>
+          <Name> pencil</Name>
+          <Price> 100</Price>
+          <Quantity>10</Quantity>
+     </item>
+     <item>
+          <Name> mobile</Name>
+          <Price> 10000</Price>
+          <Quantity>10</Quantity>
+     </item>
+</iteminfo>

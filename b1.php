@@ -1,83 +1,17 @@
 <?php
 
-   session_start();
-   $user=$_POST["user"];
-   $pass=$_POST["pass"];
-   if (isset($_SESSION['cnt']))
-   {
-    $_SESSION['cnt']=$_SESSION['cnt']+1;
+echo"<br> Book Details : <br>";
 
-    if ($_SESSION['cnt']==1 || $_SESSION['cnt']==2)
-    {
-        if ($user==$pass)
-        {
-            echo" welcome ";
-            $_SESSION['cnt']=0;
-        }
-        else if ($user!=$pass)
-        {
+$xml=simplexml_load_file("book.xml");
 
-            $_SESSION['cnt']=$_SESSION['cnt']+1;
-            echo" its  your ".$_SESSION['cnt']." attempt";
-
-
-
-            // header("location:b1.html");
-    
-        }
-    }
-    
-    if ($_SESSION['cnt']==3)
-    {
-        echo"3 attempts over.";
-        echo"";
-        $_SESSION['cnt']=0;
-        // header("location:b1.html");
-
-
-    }
-   }
-
-
-
-
-
-
-
-?>
-
-<html>
-    <head>
-
-    <script src=""></script>
-    </head>
-
-    <body>
-        
-
-
-    <script>
-
-  <?php
-if ($user!=$pass)
+foreach($xml->bookinfo as $b)
 {
-?>
-        window.alert(<?php echo" its  your ".$_SESSION['cnt']." attempt";
-        ?>);
-<?php
+    echo" Book no : ".$b->no."<br>";
+    echo" Book name : ".$b->name."<br>";
+    echo" Publish year : ".$b->pyear."<br>";
+    echo" Author : ".$b->author."<br>";
+    echo"<br>";
 }
-else
-{
-    ?>
-    window.alert(<?php echo" welcome";
-        ?>);
-<?php
-}
+
+
 ?>
-
-
-    </script>
-    </body>
-
-
-<html>

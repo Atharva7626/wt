@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<book>
+        <bookinfo>
+            <no>1</no>
+            <name> C language</name>
+            <pyear> 1970</pyear>
+            <author>Dennis Ritchie</author>       
+       </bookinfo>
+
+        <bookinfo>
+            <no>2</no>
+            <name> C++ language</name>
+            <pyear> 19981</pyear>
+            <author>Bjarne stroupstrup</author>       
+       </bookinfo>
+</book>

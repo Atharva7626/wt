@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<?xml-stylesheet type="text/css" href="st.css"?>
+<Item>
+    <ItemName> Pencil </ItemName>
+   <ItemPrice> 100 </ItemPrice>
+   <ItemQuantity> 10 </ItemQuantity>
+</Item>

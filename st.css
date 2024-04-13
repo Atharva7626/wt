@@ -1,0 +1,18 @@
+ItemName{
+  color: red;
+  font-size: 16pt;
+  font-style: bold;  
+}
+ItemPrice{
+    color: yellow;
+    font-size: 100pt;
+    font-style: bold;  
+}
+ItemQuantity{
+    color: yellow;
+    font-size: 100pt;
+    font-style: bold;  
+}
+*{
+  background-color: aqua;
+}
